@@ -1,0 +1,105 @@
+$foreground-color1: #dcfeff;
+$foreground-color2: #b1d1d2;
+$background-color1: #042a37;
+$background-color2: #00212e;
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	background-color: white;
+	font-family: 'Roboto', sans-serif;
+}
+
+#container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-content: stretch;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+#left-sidebar {
+	flex: 0 0 50px;
+	background-color: $background-color2;
+	background-image: url("/assets/img/stripes.png");
+	background-repeat: repeat-y;
+}
+#content {
+	padding: 20px 30px;
+	flex: 1;
+	background-color: $background-color1;
+	background-image: url("/assets/img/background.jpg");
+	background-repeat: no-repeat;
+	background-position: top right;
+	color: $foreground-color1;
+
+	h1 {
+		font-size: 50pt;
+		font-weight: 500;
+	}
+
+	.intro {
+		width: 500px;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 12pt;
+		font-weight: 400;
+		margin: 10px 0;
+		color: $foreground-color2;
+	}
+	.intro strong {
+		font-size: 12pt;
+		font-weight: 500;
+		color: #ffe8aa;
+	}
+
+	.attribution {
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+		padding: 3px;
+		color: white;
+		background-color: $background-color2;
+		opacity: 0.5;
+	}
+	.attribution a {
+		color: white;
+		font-size: 9pt;
+		text-decoration: none;
+	}
+}
+
+#instagram {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 10px;
+	width: 690px;
+	height: 515px;
+	border-radius: 10px;
+	opacity: 0.8;
+}
+#instagram img {
+	width: 150px;
+	height: 150px;
+	margin: 8px;
+	padding: 0;
+	border: 2px solid $foreground-color1;
+	border-radius: 5px;
+}
+
+#social {
+	margin-top: 10px;
+}
+#social svg {
+	fill: $foreground-color2;
+	width: 32px;
+	height: 32px;
+}
+#social svg:hover {
+	fill: white;
+}
+#social a {
+	text-decoration: none;
+}
